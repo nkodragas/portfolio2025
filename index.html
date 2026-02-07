@@ -9,8 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
 </head>
+
+
 <body>
+    <img 
+    src="images/hero.png" 
+    alt="" 
+    style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:auto;
+        object-fit:cover;
+        pointer-events:none;
+        z-index:-1;
+    "
+>
     <!-- Drawing Canvas -->
     <canvas id="drawingCanvas"></canvas>
     
@@ -38,7 +56,7 @@
                 </div>
                 <div class="about-visual fade-in-up delay-2">
                     <div class="image-container">
-                        <img src="images\portrait_2.png" alt="Portrait 2" class="overlap-image image-1">
+                        <img src="images\portrait_2.png" alt="Portrait 2" class="overlap-image image-1"    draggable="true">
                         <img src="images\portrait_1.jpeg" alt="Portrait 1" class="overlap-image image-2">
                     </div>
                 </div>

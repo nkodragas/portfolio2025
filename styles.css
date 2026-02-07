@@ -25,6 +25,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* Drawing Canvas Styles */
 #drawingCanvas {
     position: fixed;
@@ -85,6 +87,7 @@ body {
 
 /* Header */
 header {
+
     padding: 60px 40px 50px;
     text-align: center;
     width: 100%;
@@ -95,8 +98,8 @@ header {
 
 .snapshot-btn {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 90px;
+    right: 90px;
     background-color: transparent;
     border: 2px solid var(--text-dark);
     color: var(--text-dark);
@@ -133,12 +136,14 @@ header {
 }
 
 .logo {
+
     max-width: 50%;
     height: auto;
     display: inline-block;
 }
 
 .logo img {
+        margin-bottom: 50px;
     width: 100%;
     height: auto;
     display: block;

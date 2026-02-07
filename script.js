@@ -268,6 +268,10 @@ window.addEventListener('scroll', () => {
 
 // Add irregular distressed stroke effect
 function drawDistressedLine(fromX, fromY, toX, toY) {
+
+    ctx.save(); // save previous canvas state
+    ctx.globalCompositeOperation = "darken"; // <-- blend mode
+
     const distance = Math.hypot(toX - fromX, toY - fromY);
     const segments = Math.ceil(distance / 2);
     
@@ -276,7 +280,6 @@ function drawDistressedLine(fromX, fromY, toX, toY) {
         const x = fromX + (toX - fromX) * t;
         const y = fromY + (toY - fromY) * t;
         
-        // Add irregular distressed effect
         const offsetX = (Math.random() - 0.5) * 1.5;
         const offsetY = (Math.random() - 0.5) * 1.5;
         
@@ -285,6 +288,8 @@ function drawDistressedLine(fromX, fromY, toX, toY) {
         ctx.arc(x + offsetX, y + offsetY, Math.random() * 1.5 + 1, 0, Math.PI * 2);
         ctx.fill();
     }
+
+    ctx.restore(); // restore normal blending
 }
 
 // Update custom cursor position and rotation
