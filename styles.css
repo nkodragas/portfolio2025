@@ -23,6 +23,11 @@
     font-family: 'Razzmatazz';
     src: url('fonts/Razzmatazz.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'Ribbs';
+    src: url('fonts/Ribbs.otf') format('opentype');
+}
 * {
     margin: 0;
     padding: 0;
