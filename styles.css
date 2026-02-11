@@ -306,7 +306,7 @@ header {
 
 .section-title {
     font-family: 'Unbounded', sans-serif;
-    font-size: 72px;
+    font-size: 56px;
     font-weight: 400;
     margin-bottom: 50px;
     color: var(--text-dark);
